@@ -41,8 +41,8 @@ jobs:
     - name: Install GitHub CLI
       run: sudo apt-get install -y gh
 
-    - name: Debug: List APK files
-      run: find . -name "*.apk"
+    # - name: Debug: List APK files
+    #   run: find . -name "*.apk"
 
     - name: Upload APK to GitHub Releases
       if: github.ref == 'refs/heads/master'
